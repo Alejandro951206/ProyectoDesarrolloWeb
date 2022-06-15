@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+
+<html>
+
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="with=dive-width, initial-scale=1.0">
+    <title>MundoNatural</title>
+    <link rel="shortcut icon" href="./Imagenes/mundonatural.jpg">
+    <link rel="stylesheet" href="./CSS/Stylesheet.css">
+
+</head>
+<style>
+    
+</style>
+<body>
+
+
+ <header class="header">  
+     <!-- Menu principal y nombre de la pagina -->
+    <div class="header__logo">
+        
+        <h1>MUNDO NATURAL</h1>    
+</header>
+
+
+    </div>
+    
+    <!-- Menu de opciones -->
+<div class="flex__container">
+    <div class="flex-Grid">    
+       <a href="./coleccionflora.html" target="_parent"> Colección de flora </a>
+       </div>
+      
+        <div class="flex-Grid">     
+          <a href="./Coleccionlugares.html" target="_parent"> Colección de lugares </a>
+         </div>
+         
+        <div class="flex-Grid">
+        <a href="./coleccionmaravillas.html" target="_parent"> Colección de maravillas </a>
+        </div> 
+                    
+        <div class="flex-Grid">
+        <a href="./Colecionfauna.html" target="_parent"> Colección fauna </a>
+      </div>         
+    </div>
+
+
+
+ <!-- Imagen principal -->
+<div class="image__Container">
+    <div>
+      <img src="./Imagenes/guacamayos.jpg" alt="logoimg">
+    </div>
+</div>
+
+
+
+
+
+     <!-- Seguimiento usuarios -->
+       
+    <h2>Suscribeté a nuestras noticias</h2>
+
+<form action="enviar.php" method="get" class="Grid-container">
+
+    <div class="Grid-item">
+        <label for="nombre">Name: </label>
+        <input type="text" id="nombre" placeholder="Ingrese su nombre">
+    </div>
+    
+    <div class="Grid-item">
+        <label for="email">Email: </label>
+        <input type="text" id="email" placeholder="Ingrese su email">
+    </div>
+   
+    <div class="Grid-item">
+        <label for="telefono">Telefono: </label>
+        <input type="text" id="telefono" placeholder="Ingrese su telefono">
+    </div>    
+     
+    <div class="Grid-item">
+        <label>Desea recibir actualizaciones?</label>
+        <input type="radio" name="curso" id="opcion1"> Si
+        <input type="radio" name="curso" id="opcion2"> No
+    </div>
+
+    <div class="Grid-item">
+        <label for="select">Seleccione país de residencia</label>
+        <select name="país">
+            <option value="1">Argentina</option>
+            <option value="2">Mexíco</option>
+            <option value="3">Perú</option>
+            <option value="4">Chile</option>
+            <option value="5">Colombia</option>
+            <option value="6">Otros</option>
+        </select>
+    </div>
+    
+    <div class="Grid-item">
+        <label>Acepta terminos y condiciones?</label>
+        <input type="radio" name="curso" id="opcion1"> Si
+        <input type="radio" name="curso" id="opcion2"> No
+    </div>
+    
+    <div class="Grid-item">
+    <input type="submit" value="Enviar" class="enviar__button">
+    <input type="reset" value="Limpiar" class="limpiar_button">
+    </div>
+    </form>   
+   
+
+    <hr>
+
+    <h3 class="item-text"> Video ejemplo </h3>
+ <div class="video_item">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/ZsEBMwH5UJs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+    <footer class="footer-page"> Derechos reservados. </footer> 
+
+</body>
+
+</html>

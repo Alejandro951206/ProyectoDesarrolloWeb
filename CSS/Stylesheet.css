@@ -1,0 +1,156 @@
+*{
+
+
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+    
+
+}
+
+.text-Container{
+
+
+display: grid;
+padding: 10px;
+grid-template-columns: repeat(4,auto);
+grid-template-rows: repeat(4,auto);
+gap: 10px 20px;
+align-items: center;
+
+}
+
+.text-Container .imagen-ejemplo:nth-child(4){
+
+    grid-column: 1/2;
+    
+}
+
+.text-Container .text-item:nth-child(1){
+
+    grid-row: 1/4;
+}
+
+.text-Container .caja-video :nth-child(3){
+
+    grid-row: 2/4;
+    grid-column: 2/4;
+}
+
+
+
+
+.flex__container
+{
+    background-color: aquamarine;
+    padding: 20px;
+    display: flex;
+    gap: 10px;
+    flex-flow: row nowrap;
+    justify-content: center;
+}
+
+.flex__item {
+
+
+   background-color: #05da6f;
+   color: white;
+}
+
+.image__Container{
+
+    padding: 20px;
+    display: flex;
+    gap: 10px;
+    flex-flow: row nowrap;
+    justify-content: center;
+
+}
+
+.header
+{
+
+    padding: 20px;
+    display: flex;
+    gap: 10px;
+    flex-flow: row nowrap;
+    justify-content: center;
+}
+
+.item-text
+
+{
+
+    padding: 20px;
+    display: flex;
+    gap: 10px;
+    flex-flow: row nowrap;
+    justify-content: center;
+}
+
+.video_item 
+{
+
+    padding: 20px;
+    display: flex;
+    gap: 10px;
+    flex-flow: row nowrap;
+    justify-content: center;
+}
+
+.Grid-container
+{
+
+display: grid;
+padding: 10px;
+grid-template-columns: repeat(3,auto);
+grid-template-rows: repeat(3,auto);
+gap: 10px 20px;
+align-items: center;
+
+}
+
+
+.Grid-container .Grid-item:nth-child(8)
+{
+
+  grid-column: 1/4;
+  grid-row: 1/4;
+
+}
+
+.footer-page{
+
+    padding: 20px;
+    display: flex;
+    gap: 10px;
+    flex-flow: row nowrap;
+    justify-content: center;
+}
+
+
+@media screen and (min-width: 780px) and (max-width: 1024px){
+
+    .Grid-container .Grid-item .flex__container .image__container .text-Container .flex__item .footer-page{
+
+        width: 50%;
+    }
+
+}
+@media screen and (min-width: 480px) and (max-width: 780px){
+
+    .Grid-container .Grid-item .flex__container .image__container .text-Container .flex__item .footer-page{
+
+        width: 100%;
+    }
+
+}
+@media screen and (max-width: 480px){
+
+    .Grid-container .Grid-item .flex__container .image__container .text-Container .flex__item .footer-page{
+    height: 80px;
+}
+
+}
+
