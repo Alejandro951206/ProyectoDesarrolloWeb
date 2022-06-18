@@ -35,8 +35,8 @@ justify-content: center;
 
 .text-Container .caja-video :nth-child(3){
 
-    grid-row: 2/4;
-    grid-column: 2/4;
+    grid-row: 1/5;
+    grid-column: 1/5;
 }
 
 
@@ -132,13 +132,14 @@ align-items: center;
 }
 
 
-@media (max-width: 1024px) {
+@media (min-width: 480px) {
 
    
     .text-Container .flex__container .flex__item .image__Container .header .item-text .video_item .Grid-container .image__Container {
 
         display: flex;      
         flex-basis: 100%;
+
 
     }
 
