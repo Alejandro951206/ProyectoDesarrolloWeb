@@ -13,10 +13,10 @@
 
 
 display: grid;
-padding: 10px;
+padding: 10vh;
 grid-template-columns: repeat(4,auto);
 grid-template-rows: repeat(4,auto);
-gap: 10px 20px;
+gap: 10vh 20vh;
 align-items: center;
 justify-content: center;
 
@@ -42,12 +42,13 @@ justify-content: center;
 
 
 
+
 .flex__container
 {
     background-color: aquamarine;
-    padding: 20px;
+    padding: 20vh;
     display: flex;
-    gap: 10px;
+    gap: 10vh;
     flex-flow: row nowrap;
     justify-content: center;
 }
@@ -61,9 +62,9 @@ justify-content: center;
 
 .image__Container{
 
-    padding: 20px;
+    padding: 20vh;
     display: flex;
-    gap: 10px;
+    gap: 10vh;
     flex-flow: row nowrap;
     justify-content: center;
 
@@ -72,9 +73,9 @@ justify-content: center;
 .header
 {
 
-    padding: 20px;
+    padding: 20vh;
     display: flex;
-    gap: 10px;
+    gap: 10vh;
     flex-flow: row nowrap;
     justify-content: center;
 }
@@ -83,9 +84,9 @@ justify-content: center;
 
 {
 
-    padding: 20px;
+    padding: 20vh;
     display: flex;
-    gap: 10px;
+    gap: 10vh;
     flex-flow: row nowrap;
     justify-content: center;
 }
@@ -93,9 +94,9 @@ justify-content: center;
 .video_item 
 {
 
-    padding: 20px;
+    padding: 20vh;
     display: flex;
-    gap: 10px;
+    gap: 10vh;
     flex-flow: row nowrap;
     justify-content: center;
 }
@@ -104,10 +105,10 @@ justify-content: center;
 {
 
 display: grid;
-padding: 10px;
+padding: 10vh;
 grid-template-columns: repeat(3,auto);
 grid-template-rows: repeat(3,auto);
-gap: 10px 20px;
+gap: 10vh 20vh;
 align-items: center;
 
 }
@@ -123,21 +124,24 @@ align-items: center;
 
 .footer-page{
 
-    padding: 20px;
+    padding: 20vh;
     display: flex;
-    gap: 10px;
+    gap: 10vh;
     flex-flow: row nowrap;
     justify-content: center;
 }
 
 
-@media (max-width: 600px) {
+@media (max-width: 600vh) {
 
-    .text-Container .flex__container .flex__item .image__Container .header .item-text .video_item .Grid-container {
+   
+    .text-Container .flex__container .flex__item .image__Container .header .item-text .video_item .Grid-container .image__Container {
 
-        flex-direction: column;
+        display: flex;      
         flex-basis: 100%;
 
     }
+
+    
     
 }
