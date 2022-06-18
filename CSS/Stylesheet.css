@@ -13,10 +13,10 @@
 
 
 display: grid;
-padding: 10vh;
+padding: 10px;
 grid-template-columns: repeat(4,auto);
 grid-template-rows: repeat(4,auto);
-gap: 10vh 20vh;
+gap: 10px 20px;
 align-items: center;
 justify-content: center;
 
@@ -46,9 +46,9 @@ justify-content: center;
 .flex__container
 {
     background-color: aquamarine;
-    padding: 20vh;
+    padding: 20px;
     display: flex;
-    gap: 10vh;
+    gap: 10px;
     flex-flow: row nowrap;
     justify-content: center;
 }
@@ -62,9 +62,9 @@ justify-content: center;
 
 .image__Container{
 
-    padding: 20vh;
+    padding: 20px;
     display: flex;
-    gap: 10vh;
+    gap: 10px;
     flex-flow: row nowrap;
     justify-content: center;
 
@@ -73,9 +73,9 @@ justify-content: center;
 .header
 {
 
-    padding: 20vh;
+    padding: 20px;
     display: flex;
-    gap: 10vh;
+    gap: 10px;
     flex-flow: row nowrap;
     justify-content: center;
 }
@@ -84,9 +84,9 @@ justify-content: center;
 
 {
 
-    padding: 20vh;
+    padding: 20px;
     display: flex;
-    gap: 10vh;
+    gap: 10px;
     flex-flow: row nowrap;
     justify-content: center;
 }
@@ -94,9 +94,9 @@ justify-content: center;
 .video_item 
 {
 
-    padding: 20vh;
+    padding: 20px;
     display: flex;
-    gap: 10vh;
+    gap: 10px;
     flex-flow: row nowrap;
     justify-content: center;
 }
@@ -105,10 +105,10 @@ justify-content: center;
 {
 
 display: grid;
-padding: 10vh;
+padding: 10px;
 grid-template-columns: repeat(3,auto);
 grid-template-rows: repeat(3,auto);
-gap: 10vh 20vh;
+gap: 10px 20px;
 align-items: center;
 
 }
@@ -124,15 +124,15 @@ align-items: center;
 
 .footer-page{
 
-    padding: 20vh;
+    padding: 20px;
     display: flex;
-    gap: 10vh;
+    gap: 10px;
     flex-flow: row nowrap;
     justify-content: center;
 }
 
 
-@media (max-width: 600vh) {
+@media (max-width: 1024px) {
 
    
     .text-Container .flex__container .flex__item .image__Container .header .item-text .video_item .Grid-container .image__Container {
