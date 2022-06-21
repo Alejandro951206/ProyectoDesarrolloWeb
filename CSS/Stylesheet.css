@@ -60,14 +60,22 @@ justify-content: center;
    color: white;
 }
 
-.image__Container{
+.image__Container {
 
     padding: 20px;
     display: flex;
-    gap: 100%;
-    justify-content: center;
+    gap: 10px;
+    justify-content: center;   
 
 }
+
+.Img {
+
+    width: 75rem;
+    height: 75rem;    
+
+}
+
 
 .header
 {
@@ -89,9 +97,7 @@ justify-content: center;
     justify-content: center;
 }
 
-.item-text
-
-{
+.item-text {
 
     padding: 20px;
     display: flex;
@@ -100,8 +106,7 @@ justify-content: center;
     justify-content: center;
 }
 
-.video_item 
-{
+.video_item {
 
     padding: 20px;
     display: flex;
@@ -110,15 +115,16 @@ justify-content: center;
     justify-content: center;
 }
 
-.Grid-container
-{
+.Grid-container {
 
 display: grid;
 padding: 10px;
 grid-template-columns: repeat(3,auto);
 grid-template-rows: repeat(3,auto);
+border: 10rem;
 gap: 10px 20px;
 align-items: center;
+
 
 }
 
@@ -141,33 +147,33 @@ align-items: center;
 }
 
 
-@media (min-width: 480vh) {
+@media (max-width: 480px) {
 
    
     .text-Container {
 
         display: flex;      
         flex-basis: 100%;
-        gap: 10vh      
+        gap: 10vh;      
 
     }
     .Grid-container {
 
         display: grid;      
         flex-basis: 100%;
-        gap: 10vh 
+        gap: 10vh; 
     }
     .video_item {
 
         display: flex;      
         flex-basis: 100%;
-        gap: 10vh 
+        gap: 10vh; 
     }
     .item-text{
 
         display: flex;      
         flex-basis: 100%;
-        gap: 10vh 
+        gap: 10vh; 
         
     }
 
@@ -175,28 +181,28 @@ align-items: center;
 
         display: flex;      
         flex-basis: 100%;
-        gap: 10vh 
+        gap: 10vh;
     }
 
     .image__Container {
 
         display: flex;      
         flex-basis: 100%;
-        gap: 10vh 
+        gap: 10vh;
     }
 
     .flex__container {
 
         display: flex;      
         flex-basis: 100%;
-        gap: 10vh 
+        gap: 10vh; 
     }
 
     .flex__item {
 
         display: flex;      
         flex-basis: 100%;
-        gap: 10vh 
+        gap: 10vh; 
     }
     
 }
