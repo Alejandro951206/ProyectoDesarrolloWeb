@@ -9,6 +9,9 @@
 
 display: flex;
 margin-top: 20px;
+margin: 10px;
+justify-content: center;
+
 
 }
 
@@ -18,13 +21,40 @@ margin-top: 20px;
    
 }
 
+.list-group {
+
+    margin-top: 13px
+}
+
 .Form-container{
 
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 5%;
+    background-color: whitesmoke;
+    border-radius: 20px;
+    
 }
+
+.margin-name {
+
+    margin-top: 30px;
+}
+
+.text-box1 {
+
+    margin-top: 120px;
+    font-size: 16px;
+    
+}
+
+.text-box {
+
+    font-size: 16px;
+    
+}
+
 
 .video-box {
 
@@ -38,13 +68,25 @@ margin-top: 20px;
 
     display: flex;
     margin: 10px;
-    align-items: center;
+    
    
 }
 
 .btn btn-primary{
 
     margin: 1%;
+    margin-bottom: 30px;
+}
+
+.btn btn-secondary{
+
+    margin: 1%;
+
+}
+
+.margin-button {
+
+    margin-bottom: 30px;
 }
 
 .form-check-label .form-check-input {
@@ -165,12 +207,19 @@ a :hover :focus {
 @media (max-width: 700px) {
 
    
-    .header .video_item .item-text .text-Container .flex__item .image__Container .list-group-item {
+    .header .video_item .item-text .flex__item .image__Container .list-group-item {
 
 
         display: flex;            
 
-    }    
+
+    } 
+    
+    .text-Container{
+        
+        flex-wrap: wrap-reverse;
+        
+        }
 
     .flex__container .flex-menu{
 
@@ -179,6 +228,20 @@ a :hover :focus {
         padding: 15px;
         margin: 0px; 
 
+    }
+
+    .video-box {
+
+        display: flex;
+        width: 350px; 
+        height: 350px;
+    
+    }
+
+    .img-fluid{
+
+        width: 350px; 
+        height: 350px;
     }
 
 
