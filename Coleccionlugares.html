@@ -22,7 +22,7 @@
            </div>
            
            <!-- Menu de opciones -->
-       <div class="flex__container">
+       <div class="flex__container" id="menu-Home">
            <div class="flex-menu">    
               <a href="./Index.html" target="_parent"> PÁGINA PRINCIPAL </a>
               </div>
@@ -42,60 +42,64 @@
       
 
         <div class="text-Container">
-                <div  class="text-item">  
 
-                 <img class="text-item" src="./Imagenes/lugares.jpg" width="512"  alt="lugaresdelmundo">
+                <div  id="list-example" class="list-group">  
+
+                 <img src="./Imagenes/lugares.jpg" class="img-fluid"  alt="lugaresdelmundo">
 
                 <h2 class="text-item">Selección de lugares</h2>
-
-                <p class="text-item">PlacesExample1</p>
-           
-                <p class="text-item">PlacesExample2</p>
-             
-                <p class="text-item">PlacesExample3</p>
+               
+                <a class="list-group-item list-group-item-action" href="#list-item-1">lugares del mundo 1</a>
+                <br/>
+                <a class="list-group-item list-group-item-action" href="#list-item-2">lugares del mundo 2</a>
+                <br/>
+                <a class="list-group-item list-group-item-action" href="#list-item-3">lugares del mundo 3</a> 
 
             </div>
 
             <br>
 
-            <div class="caja-video">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/MIYU2xSm_hc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <div class="caja-video .col-md-6">
+                <iframe class="video-box" src="https://www.youtube.com/embed/MIYU2xSm_hc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
 
         </div>
 
-        <br>
+        <br/>
 
-        <div class="text-box">
+        <div class="text-box" id="list-item-1">
 
-            <h3 class="text-item">PlacesExample1</h3>
-            <img class="text-item" alt="imagentext">
+            <h3 class="contenido">PlacesExample1</h3>
+            <img class="contenido" alt="imagentext">
 
-            <p class="text-item">Lore Inpsum</p>
+            <p class="contenido">Lore Inpsum</p>
+            <a href="#menu-Home">Volver al inicio</a>
         </div>
 
-        <br>
+        <br/>
 
-        <div>
+        <div class="text-box" id="list-item-2">
 
-            <h3 class="text-item">PlacesExample2</h3>
-            <img class="text-item" alt="imagentext">
+            <h3 class="contenido">PlacesExample2</h3>
+            <img class="contenido" alt="imagentext">
 
             <p class="text-item">Lore Inpsum</p>
+            <a href="#menu-Home">Volver al inicio</a>
         </div>
 
-        <br>
+        <br/>
         
-        <div class="text-box">
+        <div class="text-box" id="list-item-3">
 
-            <h3 class="text-item">PlacesExample2</h3>
-            <img class="text-item" alt="imagentext">
+            <h3 class="contenido">PlacesExample2</h3>
+            <img class="contenido" alt="imagentext">
 
-            <p class="text-item">Lore Inpsum</p>
+            <p class="contenido">Lore Inpsum</p>
+            <a href="#menu-Home">Volver al inicio</a>
 
         </div>
 
-        <br>
+        <br/>
 
         <footer class="footer-page">Derechos reservados.</footer>
         

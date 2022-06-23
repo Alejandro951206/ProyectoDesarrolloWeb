@@ -8,14 +8,15 @@
 
 
 display: flex;
-padding: 10px;
-gap: 10px 20px;
-justify-content: center;
 margin-top: 20px;
 
 }
 
-
+.list-group-item{
+    
+    display: block;   
+   
+}
 
 .Form-container{
 
@@ -23,6 +24,22 @@ margin-top: 20px;
     justify-content: center;
     align-items: center;
     margin: 5%;
+}
+
+.video-box {
+
+    display: flex;
+    width: 490px; 
+    height: 800px;
+
+}
+
+.caja-video {
+
+    display: flex;
+    margin: 10px;
+    align-items: center;
+   
 }
 
 .btn btn-primary{
@@ -57,6 +74,7 @@ a {
     color: black !important;
     text-decoration: none !important;
     
+    
 
 }
 
@@ -80,6 +98,7 @@ a :hover :focus {
     justify-content: center;   
 
 }
+
 
 .Img {
 
@@ -146,23 +165,12 @@ a :hover :focus {
 @media (max-width: 700px) {
 
    
-    .header .video_item .item-text .text-Container .flex__item .image__Container {
+    .header .video_item .item-text .text-Container .flex__item .image__Container .list-group-item {
 
 
-        display: flex;
-        font-size: 10rem;     
-        padding: 15rem;
-        margin: 0px;      
+        display: flex;            
 
-    }
-    .Grid-container {
-
-        display: flex;
-        font-size: 10px;
-        padding: 15px;
-        margin: 0px;      
-       
-    }
+    }    
 
     .flex__container .flex-menu{
 
@@ -172,6 +180,8 @@ a :hover :focus {
         margin: 0px; 
 
     }
+
+
 
     .Img {
 
