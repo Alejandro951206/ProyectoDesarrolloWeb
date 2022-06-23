@@ -11,11 +11,12 @@
     <title>MundoNatural</title>
     <link rel="shortcut icon" href="./Imagenes/mundonatural.jpg">
     <link rel="stylesheet" href="./CSS/Stylesheet.css">
-
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </head>
-<style>
-    
-</style>
+
 <body>
 
 
@@ -33,19 +34,19 @@
 <div class="flex__container">
     
     <div class="flex-menu">    
-       <a href="./coleccionflora.html" target="_parent"> Colección de flora </a>
+       <a href="./coleccionflora.html" target="_parent"> COLECCIÓN DE FLORA </a>
        </div>
       
         <div class="flex-menu">     
-          <a href="./Coleccionlugares.html" target="_parent"> Colección de lugares </a>
+          <a href="./Coleccionlugares.html" target="_parent"> COLECCIÓN DE LUGARES </a>
          </div>
          
         <div class="flex-menu">
-        <a href="./coleccionmaravillas.html" target="_parent"> Colección de maravillas </a>
+        <a href="./coleccionmaravillas.html" target="_parent"> COLECCIÓN DE MARAVILLAS </a>
         </div> 
                     
         <div class="flex-menu">
-        <a href="./Coleccionfauna.html" target="_parent"> Colección fauna </a>
+        <a href="./Coleccionfauna.html" target="_parent"> COLECCIÓN FAUNA </a>
       </div>
             
     </div>
@@ -59,61 +60,66 @@
     </div>
 </div>
 
-
-
-
-
      <!-- Seguimiento usuarios -->
        
     <h2 class="sucribete">Suscribeté a nuestras noticias</h2>
 
-<form action="enviar.php" method="get" class="Grid-container">
+<form action="enviar.php" method="get" class="Form-container">
 
     
 
-    <div class="Grid-item">
-        <label for="nombre">Name: </label>
-        <input type="text" id="nombre" placeholder="Ingrese su nombre">
-    </div>
+    <div class="col-md-6">   
+            
+        <label for="exampleInputName1" class="form-check-label">Nombre</label>
+        <input type="text" class="form-control" id="exampleInputName1" aria-describedby="emailHelp">    
+        
+        <label for="exampleInputEmail1" class="form-check-label">Correo electronico</label>
+        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+        <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+
     
-    <div class="Grid-item">
-        <label for="email">Email: </label>
-        <input type="text" id="email" placeholder="Ingrese su email">
-    </div>
    
-    <div class="Grid-item">
-        <label for="telefono">Telefono: </label>
-        <input type="text" id="telefono" placeholder="Ingrese su telefono">
-    </div>    
+    
+       <label for="telefono" class="form-check-label">Telefono: </label>
+        <input type="text" class="form-control" id="exampletelefone1" aria-describedby="textHelp">
      
-    <div class="Grid-item">
-        <label>Desea recibir actualizaciones?</label>
-        <input type="radio" name="curso" id="opcion1"> Si
-        <input type="radio" name="curso" id="opcion2"> No
-    </div>
+     
+   
+        <label >Desea recibir actualizaciones?</label>   
+        <br/>     
+        <input class="form-check-label" for="exampleCheck1" type="radio" name="curso" id="exampleCheck1"> Si
+        <br/>
+        <input class="form-check-label" for="exampleCheck2" type="radio" name="curso" id="exampleCheck2"> No
+    
+        <br/>   
+        <label>Seleccione país de residencia</label>
+        <br/>
+        <select name="país" class="form-check-label">
+            <option id="countrySelect1" value="1" >Argentina</option>
+            <option id="countrySelect2" value="2">Mexíco</option>
+            <option id="countrySelect3" value="3">Perú</option>
+            <option id="countrySelect4" value="4">Chile</option>
+            <option id="countrySelect5" value="5">Colombia</option>
+            <option id="countrySelect6" value="6">Otros</option>
+        </select>   
+        <br/>
 
-    <div class="Grid-item">
-        <label for="select">Seleccione país de residencia</label>
-        <select name="país">
-            <option value="1">Argentina</option>
-            <option value="2">Mexíco</option>
-            <option value="3">Perú</option>
-            <option value="4">Chile</option>
-            <option value="5">Colombia</option>
-            <option value="6">Otros</option>
-        </select>
-    </div>
-    
-    <div class="Grid-item">
         <label>Acepta terminos y condiciones?</label>
-        <input type="radio" name="curso" id="opcion1"> Si
-        <input type="radio" name="curso" id="opcion2"> No
-    </div>
+        <br/>
+        <input for="exampleCheck1" type="radio" name="curso" id="exampleCheck1"> Si
+        <br/>       
+        <input for="exampleCheck2" type="radio" name="curso" id="exampleCheck2"> No
+        <br/>
+
+
+        <button for="exampleSubmit1" type="submit" class="btn btn-primary">Enviar</button>
+        
+        <button for="exampleClean1" type="reset" class="btn btn-secondary">Limpiar</button> 
+
+    </div>   
     
-    <div class="Grid-item">
-    <input type="submit" value="Enviar" class="enviar__button">
-    <input type="reset" value="Limpiar" class="limpiar_button">
-    </div>
+
+
     </form>   
    
 
