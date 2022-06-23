@@ -37,6 +37,13 @@ justify-content: center;
     
 }
 
+
+.contenido{
+
+    justify-content: center;
+    align-items: center;
+}
+
 .margin-name {
 
     margin-top: 30px;
@@ -46,12 +53,16 @@ justify-content: center;
 
     margin-top: 50px;
     font-size: 16px;
+    justify-content: center;
+    align-items: center;
     
 }
 
 .text-box {
 
     font-size: 16px;
+    justify-content: center;
+    align-items: center;
     
 }
 
