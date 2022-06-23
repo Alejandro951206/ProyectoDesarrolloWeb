@@ -44,7 +44,7 @@ justify-content: center;
 
 .text-box1 {
 
-    margin-top: 120px;
+    margin-top: 50px;
     font-size: 16px;
     
 }
@@ -59,8 +59,9 @@ justify-content: center;
 .video-box {
 
     display: flex;
-    width: 490px; 
-    height: 800px;
+    width: 720px; 
+    height: 1024px;
+    
 
 }
 
