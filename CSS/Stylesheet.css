@@ -9,58 +9,13 @@
 
 display: flex;
 padding: 10px;
-grid-template-columns: repeat(3,auto);
-grid-template-rows: repeat(3,auto);
 gap: 10px 20px;
-
 justify-content: center;
 margin-top: 20px;
 
 }
 
-.text-item .p{
 
-    margin-bottom: 5px;
-}
-
-.text-Container .item-text:nth-child(1){
-
-    grid-row: 1/2;
-    grid-column: 1/2;
-}
-
-
-.text-Container .item-text:nth-child(2){
-
-    grid-row: 2/2;
-    grid-column: 2/2;
-}
-
-
-.text-Container .item-text:nth-child(3){
-
-    grid-row: 3/3;
-    grid-column: 3/3;
-}
-
-.text-Container .principal-text:nth-child(4){
-
-    grid-row: 4/4;
-    grid-column: 4/4;
-}
-
-
-.text-Container .item-text:nth-child(5){
-
-    grid-row: 5/5;
-    grid-column: 5/5;
-}
-
-.text-Container .caja-video:nth-child(6){
-
-    grid-row: 2/6;
-    grid-column: 2/6;
-}
 
 .Form-container{
 
@@ -75,9 +30,10 @@ margin-top: 20px;
     margin: 1%;
 }
 
-.form-check-label{
+.form-check-label .form-check-input {
 
     margin: 1%;
+    gap: 1%;
 }
 
 .flex__container
@@ -91,9 +47,10 @@ margin-top: 20px;
     
 }
 
-.btn btn-primary{
+.btn btn-primary btn-secondary{
 
-    display: bottom;
+    align-content: center;
+    
 }
 
 a {
@@ -135,11 +92,12 @@ a :hover :focus {
 .header
 {
 
-    padding: 20px;
+    
     display: flex;
-    gap: 10px;
-    flex-flow: row nowrap;
+    padding: 2rem;
+    gap: 1rem;
     justify-content: center;
+    align-items: center;
 }
 
 .sucribete {
@@ -190,14 +148,16 @@ a :hover :focus {
    
     .header .video_item .item-text .text-Container .flex__item .image__Container {
 
-        font-size: 10px;     
-        padding: 15px;
+
+        display: flex;
+        font-size: 10rem;     
+        padding: 15rem;
         margin: 0px;      
 
     }
     .Grid-container {
 
-        
+        display: flex;
         font-size: 10px;
         padding: 15px;
         margin: 0px;      

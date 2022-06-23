@@ -83,32 +83,40 @@
        <label for="telefono" class="form-check-label">Telefono: </label>
         <input type="text" class="form-control" id="exampletelefone1" aria-describedby="textHelp">
      
-     
+        <br/>   
    
         <label >Desea recibir actualizaciones?</label>   
-        <br/>     
-        <input class="form-check-label" for="exampleCheck1" type="radio" name="curso" id="exampleCheck1"> Si
+        <br/> 
+        <input class="form-check-input" type="radio" name="flexRadioDefault1" id="flexRadioDefault1" checked>
+        <label class="form-check-label" for="flexRadioDefault2"> Si </label>
         <br/>
-        <input class="form-check-label" for="exampleCheck2" type="radio" name="curso" id="exampleCheck2"> No
+        <input class="form-check-input" type="radio" name="flexRadioDefault1" id="flexRadioDefault2"> 
+        <label class="form-check-label" for="flexRadioDefault2"> No </label>
     
-        <br/>   
-        <label>Seleccione país de residencia</label>
-        <br/>
-        <select name="país" class="form-check-label">
-            <option id="countrySelect1" value="1" >Argentina</option>
-            <option id="countrySelect2" value="2">Mexíco</option>
-            <option id="countrySelect3" value="3">Perú</option>
-            <option id="countrySelect4" value="4">Chile</option>
-            <option id="countrySelect5" value="5">Colombia</option>
+       <br/>
+       <br/>
+
+        <select name="país" class="form-check-label form-select form-select-sm" aria-label=".form-select-sm example">
+            <option selected>Seleccione país de residencia</option>
+            <option id="countrySelect1" value="1">Argentina</option>
+            <option id="countrySelect2" value="2">Colombia</option>
+            <option id="countrySelect3" value="3">Chile</option>
+            <option id="countrySelect4" value="4">Mexíco</option>
+            <option id="countrySelect5" value="5">Perú</option>
             <option id="countrySelect6" value="6">Otros</option>
         </select>   
+        
         <br/>
 
         <label>Acepta terminos y condiciones?</label>
         <br/>
-        <input for="exampleCheck1" type="radio" name="curso" id="exampleCheck1"> Si
-        <br/>       
-        <input for="exampleCheck2" type="radio" name="curso" id="exampleCheck2"> No
+        <input class="form-check-input" type="radio" name="flexRadioDefault2" id="flexRadioDefault3" checked>
+        <label class="form-check-label" for="flexRadioDefault2"> Si </label>
+        <br/>
+        <input class="form-check-input" type="radio" name="flexRadioDefault2" id="flexRadioDefault4"> 
+        <label class="form-check-label" for="flexRadioDefault2"> No </label>
+
+        <br/>
         <br/>
 
 
