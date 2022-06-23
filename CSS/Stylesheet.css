@@ -61,7 +61,7 @@ justify-content: center;
     display: flex;
     width: 720px; 
     height: 1024px;
-    
+
 
 }
 
@@ -96,8 +96,18 @@ justify-content: center;
     gap: 1%;
 }
 
-.flex__container
+.flex__container 
 {
+    background-color: whitesmoke;
+    padding: 20px;
+    display: flex;
+    gap: 10px;
+    flex-flow: row nowrap;
+    justify-content: space-around;    
+    
+}
+
+.flex-menu{
     background-color: whitesmoke;
     padding: 20px;
     display: flex;
@@ -154,12 +164,15 @@ a :hover :focus {
 .header
 {
 
-    
     display: flex;
     padding: 2rem;
     gap: 1rem;
     justify-content: center;
     align-items: center;
+    color: whitesmoke;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(114,189,82,1) 18%, rgba(0,212,255,1) 100%);
+
 }
 
 .sucribete {
@@ -222,13 +235,24 @@ a :hover :focus {
         
         }
 
-    .flex__container .flex-menu{
+    .flex__container {
 
         display: block;
+        justify-content: center;
+        align-items: center;
         font-size: 10px;
         padding: 15px;
-        margin: 0px; 
+        margin: 0px;
+        
 
+    }   
+
+    .flex-menu {
+
+        display: block;      
+        font-size: 10px;
+        padding: 15px;
+        margin: 0px;
     }
 
     .video-box {
