@@ -42,6 +42,15 @@ justify-content: center;
 
     justify-content: center;
     align-items: center;
+    margin: 0 auto;
+    
+}
+
+.img_content{
+
+    height: 661px;
+    width: 960px;
+    margin: 0 auto;
 }
 
 .margin-name {
@@ -49,20 +58,14 @@ justify-content: center;
     margin-top: 30px;
 }
 
-.text-box1 {
 
-    margin-top: 50px;
+.text_box {
+
     font-size: 16px;
     justify-content: center;
     align-items: center;
+    margin: 0 auto;
     
-}
-
-.text-box {
-
-    font-size: 16px;
-    justify-content: center;
-    align-items: center;
     
 }
 
@@ -79,8 +82,7 @@ justify-content: center;
 .caja-video {
 
     display: flex;
-    margin: 10px;
-    
+    margin: 10px;   
    
 }
 
@@ -243,6 +245,8 @@ a :hover :focus {
     .text-Container{
         
         flex-wrap: wrap-reverse;
+        margin-left: 20px;
+        margin-right: 20px;
         
         }
 
@@ -287,6 +291,12 @@ a :hover :focus {
         width: 25rem;
         height: 25rem;    
     
+    }
+
+    .text_box {
+
+        margin-left: 10px;
+        margin-right: 20px;
     }
 
 }
