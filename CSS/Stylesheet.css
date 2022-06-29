@@ -17,7 +17,7 @@ justify-content: center;
 
 .list-group-item{
     
-    display: block;   
+    display: flex;   
    
 }
 
@@ -38,19 +38,33 @@ justify-content: center;
 }
 
 
+
 .contenido{
 
+    display: flex;
     justify-content: center;
     align-items: center;
-    margin: 0 auto;
+    margin-top: 10px;
     
+    
+}
+
+.home_option{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 54rem;
 }
 
 .img_content{
 
+    display: flex;
     height: 661px;
-    width: 960px;
-    margin: 0 auto;
+    width: 960px;    
+    align-items: center;
+    justify-content: center;
+    margin-left: 29.2rem;
 }
 
 .margin-name {
@@ -62,6 +76,7 @@ justify-content: center;
 .text_box {
 
     font-size: 16px;
+    display: block;
     justify-content: center;
     align-items: center;
     margin: 0 auto;
@@ -268,6 +283,7 @@ a :hover :focus {
         font-size: 10px;
         padding: 15px;
         margin: 0px;
+      
     }
 
     .video-box {
@@ -276,6 +292,11 @@ a :hover :focus {
         width: 350px; 
         height: 350px;
     
+    }
+
+    .img_content {
+
+        margin-left: 0rem;
     }
 
     .img-fluid{
@@ -299,4 +320,13 @@ a :hover :focus {
         margin-right: 20px;
     }
 
+    .home_option{
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 7.5rem;
+    }
+
 }
+
