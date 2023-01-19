@@ -70,7 +70,7 @@
 
     <div class="col-md-6">   
             
-        <label for="exampleInputName1" class="form-label margin-name">Nombre</label>
+        <label for="exampleInputName1" id="nombre_cliente" class="form-label margin-name">Nombre</label>
         <input type="text" class="form-control" id="exampleInputName1" aria-describedby="emailHelp">    
         
         <label for="exampleInputEmail1" class="form-label">Correo electronico</label>
@@ -96,7 +96,7 @@
        <br/>
        <br/>
 
-        <select name="país" class="form-select form-select-sm" aria-label=".form-select-sm example">
+        <select name="país" id="pais_select" class="form-select form-select-sm" aria-label=".form-select-sm example">
             <option selected>Seleccione país de residencia</option>
             <option id="countrySelect1" value="1">Argentina</option>
             <option id="countrySelect2" value="2">Colombia</option>
@@ -120,9 +120,9 @@
         <br/>
 
 
-        <button for="exampleSubmit1" type="submit" class="btn btn-primary margin-button">Enviar</button>
+        <button for="exampleSubmit1" id="btn_registrar" type="submit" class="btn btn-primary margin-button">Enviar</button>
         
-        <button for="exampleClean1" type="reset" class="btn btn-secondary margin-button">Limpiar</button> 
+        <button for="exampleClean1" id="btnlimpiar" type="reset" class="btn btn-secondary margin-button">Limpiar</button> 
 
     </div>   
     
@@ -148,5 +148,7 @@
 </footer> 
 
 </body>
+
+<script src="../mi-repositorio/JS/formulario.js"></script>
 
 </html>
