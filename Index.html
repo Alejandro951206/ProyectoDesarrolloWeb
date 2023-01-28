@@ -69,25 +69,25 @@
     <div class="col-md-6">   
             
         <label for="exampleInputName1" class="form-label margin-name">Nombre</label>
-        <input name="nombre" type="text" class="form-control" id="exampleInputName1" aria-describedby="emailHelp">
+        <input name="nombre" type="text" class="form-control" placeholder="Su nombre y apellidos" id="exampleInputName1" aria-describedby="emailHelp">
         
         
         <label for="exampleInputEmail1" class="form-label">Correo electronico</label>
-        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+        <input type="email" class="form-control" placeholder="Ejemplo@correo.com" id="exampleInputEmail1" aria-describedby="emailHelp">
         <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>   
 
     
    
     
        <label for="telefono" id="celular" class="form-label">Telefono: </label>
-        <input type="text" class="form-control" id="exampletelefone1" aria-describedby="textHelp">
+        <input type="number" class="form-control" id="exampletelefone1" aria-describedby="textHelp">
         
      
         <br/>   
    
         <label >Desea recibir actualizaciones?</label>   
         <br/> 
-        <input class="form-check-input" type="radio" name="flexRadioDefault1" id="flexRadioDefault1" checked>
+        <input class="form-check-input" type="radio" name="flexRadioDefault1" id="flexRadioDefault1">
         <label class="form-check-label" for="flexRadioDefault2"> Si </label>
         <br/>
         <input class="form-check-input" type="radio" name="flexRadioDefault1" id="flexRadioDefault2"> 
@@ -110,17 +110,18 @@
 
         <label>Acepta terminos y condiciones?</label>
         <br/>
-        <input class="form-check-input" type="radio" name="flexRadioDefault2" id="flexRadioDefault3" checked>
-        <label class="form-check-label" for="flexRadioDefault2"> Si </label>
+        <input class="form-check-input" type="radio" value="yes" id="btn_aceptar" name="flexRadioDefault2">
+        <label class="form-check-label" for="flexRadioDefault2" id="flexRadioDefault3"> Si </label>
         <br/>
-        <input class="form-check-input" type="radio" name="flexRadioDefault2" id="flexRadioDefault4"> 
-        <label class="form-check-label" for="flexRadioDefault2"> No </label>
+        <input class="form-check-input" type="radio" id="btn_rechazar" value="no" name="flexRadioDefault2"> 
+        <label class="form-check-label" for="flexRadioDefault2" id="flexRadioDefault4" > No </label>
+        
 
         <br/>
         <br/>
 
 
-        <button for="exampleSubmit1" id="btn_registrar" type="button" class="btn btn-primary margin-button" onclick="check()">Enviar</button>
+        <button for="exampleSubmit1" id="btn_registrar" type="button" class="btn btn-primary margin-button" onclick="checkinfo()">Enviar</button>
         
         <button for="exampleClean1" id="btnlimpiar" type="reset" class="btn btn-secondary margin-button">Limpiar</button> 
 
