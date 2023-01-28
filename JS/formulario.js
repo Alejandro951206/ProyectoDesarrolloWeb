@@ -1,48 +1,42 @@
+var subscriptions = [];
 
 
+function suscribe(Cname,Cphone,Cemail,Ccountry){
 
+     var newClient = {
 
- 
- 
-function checkinfo(){    
+       name : Cname,
+       phone : Cphone,
+       email : Cemail,
+       country : Ccountry
+       
 
-client_name = document.getElementById("exampleInputName1").value;
-client_email = document.getElementById("exampleInputEmail1").value;
-client_phone = document.getElementById("exampletelefone1").value;
-client_country = document.getElementById("pais_select").value;
+     };
 
-   if (client_name != "" && client_email != "" && client_phone != "" && client_country != "") {
+     console.log(newClient);
+     subscriptions.push(newClient);
+     LocalStorageClientList(subscriptions);
 
-        window.alert("Registro completado, biendevenido "+client_name)
-        
-
-   }else {
-
-        window.alert("Se requieren todos los campos para continuar")
-   }   
-
-  
 }
 
+function getClientList(){
 
-function suscribe() {
+     var storagegate = localStorage.getItem("LocalStorageClientList");
+     if (storagegate == null){
 
-     client_name = document.getElementById("exampleInputName1").value;
-     client_email = document.getElementById("exampleInputEmail1").value;
-     client_phone = document.getElementById("exampletelefone1").value;
-     client_country = document.getElementById("pais_select").value;
+          subscriptions = [];
 
-     var Arrayalmacen = [client_name,client_email,client_phone,client_country];
+     }else{
 
-     for (i = 0; i > 4; i++){
-
-      
-
-
+          subscriptions = JSON.parse(storagegate);
      }
 
+     return subscriptions;
 
 }
 
+function LocalStorageClientList(plist){
 
+     localStorage.setItem("LocalStorageClientList", JSON.stringify(plist));
 
+}
