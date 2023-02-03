@@ -110,20 +110,18 @@
 
         <label>Acepta terminos y condiciones?</label>
         <br/>
-        <input class="form-check-input" type="radio" value="yes" id="btn_aceptar" name="flexRadioDefault2">
-        <label class="form-check-label" for="flexRadioDefault2" id="flexRadioDefault3"> Si </label>
-        <br/>
-        <input class="form-check-input" type="radio" id="btn_rechazar" value="no" name="flexRadioDefault2"> 
-        <label class="form-check-label" for="flexRadioDefault2" id="flexRadioDefault4" > No </label>
+
+        <input class="form-check-input" type="checkbox" id="btn_aceptar" name="flexRadioDefault2" onclick="validateCheck(this)">
+        <label class="form-check-label" for="flexRadioDefault2" id="flexRadioDefault3"> Si </label>        
         
 
-        <br/>
-        <br/>
+       
 
-
-        <button for="exampleSubmit1" id="btn_registrar" type="button" class="btn btn-primary margin-button">Enviar</button>
+        <div style="margin-top: 2em;">
+        <button for="exampleSubmit1" id="btn_registrar" type="button" class = "btn btn-primary margin-button" onsubmit= "saveUser()">Enviar</button>
         
         <button for="exampleClean1" id="btnlimpiar" type="reset" class="btn btn-secondary margin-button">Limpiar</button> 
+     </div>
 
     </div> 
 
@@ -133,7 +131,7 @@
         <h2>Lista de clientes subscritos</h2>
         <table class="table table-hover" id="SubsClients">
             <thead>
-                <tr>
+                <tr>                                  
                     <th>Nombre</th>
                     <th>Email</th>
                     <th>Telefono</th>
@@ -145,8 +143,9 @@
     
             </tbody>
             
-        </table>
-        <input type="text" name="buscador" id="buscar">
+            
+        </table>  
+        <input type="button" value="Eliminar" class = "btn btn-primary margin-button">     
     </div>   
 
     <hr>
