@@ -40,3 +40,9 @@ function LocalStorageClientList(plist){
      localStorage.setItem("LocalStorageClientList", JSON.stringify(plist));
 
 }
+
+function sublist() {
+
+     return subscriptions;
+}
+

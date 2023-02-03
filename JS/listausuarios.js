@@ -1,5 +1,5 @@
 document.querySelector("#btn_registrar").addEventListener("click", saveUser);
-
+printSubs();
 
 function saveUser(){
 
@@ -16,8 +16,9 @@ var  Sname = document.querySelector("#exampleInputName1").value,
      Semail = document.querySelector("#exampleInputEmail1").value,
      Scountry = document.querySelector("#pais_select").value;
 
-     suscribe(Sname,Semail,Sphone,Scountry);
+     suscribe(Sname,Semail,Sphone,Scountry);     
      window.alert("Registro completado!")
+     printSubs();
 
      
    
@@ -27,3 +28,41 @@ var  Sname = document.querySelector("#exampleInputName1").value,
 
     }
 }
+
+
+function printSubs(){
+
+    var list = sublist(),
+        tbody = document.querySelector("#SubsClients tbody");
+        
+        tbody.innerHTML = '';
+
+        for (var i = 0; i < list.length; i++) {
+
+            var row = tbody.insertRow(i),
+                name_cell = row.insertCell(0),
+                email_Cell = row.insertCell(1),
+                phone_cell = row.insertCell(2),
+                country_cell = row.insertCell(3);
+                select_cell = row.insertCell(4)
+
+            name_cell.innerHTML = list[i].name;
+            email_Cell.innerHTML = list[i].email;
+            phone_cell.innerHTML = list[i].phone;
+            country_cell.innerHTML = list[i].country;
+
+
+            var inputSelect = document.createElement('input');
+            inputSelect.type = 'radio';
+            inputSelect.value = list[i].name;
+            select_cell.appendChild(inputSelect);
+
+
+            tbody.appendChild(row);
+
+        }
+
+
+}
+
+
