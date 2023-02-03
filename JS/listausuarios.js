@@ -82,6 +82,7 @@ function printSubs(){
 
             var inputSelect = document.createElement('input');
             inputSelect.type = 'checkbox';
+            inputSelect.id = 'seleccionado';
             inputSelect.value = list[i].name;
             select_cell.appendChild(inputSelect);
 
@@ -100,11 +101,6 @@ function printSubs(){
 
 function delete_client(){
 
-for (var e = 0; e < list.length; e++){
 
-
-
-
-}
 
 }
