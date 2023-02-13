@@ -81,8 +81,7 @@ function printSubs(){
            
 
             var inputSelect = document.createElement('input');
-            inputSelect.type = 'checkbox';
-            inputSelect.id = 'seleccionado';
+            inputSelect.type = 'checkbox';            
             inputSelect.value = list[i].name;
             select_cell.appendChild(inputSelect);
 
@@ -99,8 +98,23 @@ function printSubs(){
 
 }
 
-function delete_client(){
+var busqueda = document.getElementById('buscar');
+    var table = document.getElementById("SubsClients").tBodies[0];
 
+    buscaTabla = function(){
+      texto = busqueda.value.toLowerCase();
+      var r=0;
+      while(row = table.rows[r++])
+      {
+        if ( row.innerText.toLowerCase().indexOf(texto) !== -1 )
+          row.style.display = null;
+        else
+          row.style.display = 'none';
+      }
+    }
 
+    busqueda.addEventListener('keyup', buscaTabla);
 
-}
+  
+
+  
