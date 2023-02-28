@@ -1,6 +1,7 @@
 var subscriptions = [];
 
 
+
 function suscribe(Cname,Cphone,Cemail,Ccountry){
 
      var newClient = {
@@ -21,7 +22,7 @@ function suscribe(Cname,Cphone,Cemail,Ccountry){
 
 function getClientList(){
 
-     var storagegate = localStorage.getItem("LocalStorageClientList");
+     let storagegate = localStorage.getItem("LocalStorageClientList");
      if (storagegate == null){
 
           subscriptions = [];

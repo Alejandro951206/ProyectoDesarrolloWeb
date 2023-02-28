@@ -1,5 +1,6 @@
 document.querySelector("#btn_registrar").addEventListener("click", saveUser);
 printSubs();
+getClientList();
 btn_registrar.disabled = true;
 
 
@@ -29,15 +30,17 @@ client_country = document.getElementById("pais_select").value;
 if (client_name != "" && client_email != "" && client_phone != "" && client_country != "" ) {
 
     
-var  Sname = document.querySelector("#exampleInputName1").value,     
+let  Sname = document.querySelector("#exampleInputName1").value,     
      Sphone = document.querySelector("#exampletelefone1").value,
      Semail = document.querySelector("#exampleInputEmail1").value,
      Scountry = document.querySelector("#pais_select").value;
      
 
-     suscribe(Sname,Semail,Sphone,Scountry);
-      
-     window.alert("Registro completado!")
+     suscribe(Sname,Semail,Sphone,Scountry);  
+    
+     Swal.fire(      
+      'Registro completado!',     
+    )
      printSubs();
 
      
@@ -54,7 +57,7 @@ var  Sname = document.querySelector("#exampleInputName1").value,
 
 function printSubs(){
 
-    var list = sublist(),
+    let list = sublist(),
         tbody = document.querySelector("#SubsClients tbody");
         
        
@@ -62,11 +65,11 @@ function printSubs(){
         
         tbody.innerHTML = '';
 
-        for (var i = 0; i < list.length; i++) {
+        for (let i = 0; i < list.length; i++) {
 
             
 
-            var row = tbody.insertRow(i),              
+            let row = tbody.insertRow(i),              
                 name_cell = row.insertCell(0),
                 email_Cell = row.insertCell(1),
                 phone_cell = row.insertCell(2),
@@ -80,16 +83,14 @@ function printSubs(){
             country_cell.innerHTML = list[i].country;
            
 
-            var inputSelect = document.createElement('input');
+            let inputSelect = document.createElement('input');
             inputSelect.type = 'checkbox';            
             inputSelect.value = list[i].name;
             select_cell.appendChild(inputSelect);
 
 
             tbody.appendChild(row);
-
-           
-           
+                       
 
         }
 
@@ -98,12 +99,12 @@ function printSubs(){
 
 }
 
-var busqueda = document.getElementById('buscar');
-    var table = document.getElementById("SubsClients").tBodies[0];
+let busqueda = document.getElementById('buscar');
+    let table = document.getElementById("SubsClients").tBodies[0];
 
     buscaTabla = function(){
       texto = busqueda.value.toLowerCase();
-      var r=0;
+     let r=0;
       while(row = table.rows[r++])
       {
         if ( row.innerText.toLowerCase().indexOf(texto) !== -1 )
