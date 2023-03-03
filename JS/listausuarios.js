@@ -4,6 +4,7 @@ getClientList();
 btn_registrar.disabled = true;
 
 
+
 function validateCheck(btn_aceptar) {
 
 
@@ -85,9 +86,9 @@ function printSubs(){
 
             let inputSelect = document.createElement('input');
             inputSelect.type = 'checkbox';            
-            inputSelect.value = list[i].name;
+            inputSelect.value = list[i].name;        
             select_cell.appendChild(inputSelect);
-
+            
 
             tbody.appendChild(row);
                        
