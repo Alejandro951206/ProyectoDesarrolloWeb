@@ -231,6 +231,16 @@ a :hover :focus {
     justify-content: center;
 }
 
+.form-button {
+
+display: flex;
+padding: 0.1rem;
+gap: 0.1rem;
+margin-left: 50rem;
+
+}
+
+
 .item-text {
 
     padding: 20px;
