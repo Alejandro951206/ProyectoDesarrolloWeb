@@ -1,4 +1,4 @@
-let subscriptions = [];   
+ subscriptions = [];   
 
 
 function suscribe(Cname,Cphone,Cemail,Ccountry){
