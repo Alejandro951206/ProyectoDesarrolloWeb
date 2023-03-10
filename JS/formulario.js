@@ -1,10 +1,9 @@
-var subscriptions = [];
-
+let subscriptions = [];   
 
 
 function suscribe(Cname,Cphone,Cemail,Ccountry){
 
-     var newClient = {
+     let newClient = {
 
        name : Cname,
        phone : Cphone,

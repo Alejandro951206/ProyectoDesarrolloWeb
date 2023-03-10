@@ -4,7 +4,6 @@ getClientList();
 btn_registrar.disabled = true;
 
 
-
 function validateCheck(btn_aceptar) {
 
 
@@ -85,7 +84,8 @@ function printSubs(){
            
 
             let inputSelect = document.createElement('input');
-            inputSelect.type = 'checkbox';            
+            inputSelect.type = 'checkbox';
+            inputSelect.id = 'Chekedboxe';         
             inputSelect.value = list[i].name;        
             select_cell.appendChild(inputSelect);
             
@@ -119,4 +119,4 @@ let busqueda = document.getElementById('buscar');
 
   
 
-  
+    
