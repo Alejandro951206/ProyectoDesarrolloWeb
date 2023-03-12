@@ -45,4 +45,3 @@ function sublist() {
 
      return subscriptions;
 }
-

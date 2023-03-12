@@ -39,8 +39,10 @@ let  Sname = document.querySelector("#exampleInputName1").value,
      suscribe(Sname,Semail,Sphone,Scountry);  
     
      Swal.fire(      
-      'Registro completado!',     
-    )
+      'Registro completado!',
+           
+    )   
+    
      printSubs();
 
      
